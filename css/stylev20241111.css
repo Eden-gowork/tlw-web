@@ -132,11 +132,16 @@ h3{
 a:hover, a:focus {
     color: unset;
 }
-
+.pb-32-adjust{
+    padding-bottom: 32px;
+}
 @media only screen and (max-width: 1920px) {
     #wrapper {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .pb-32-adjust{
+        padding-bottom: 32px;
     }
 }
 
@@ -151,6 +156,11 @@ a:hover, a:focus {
     #wrapper {
         padding-right: 0px;
         padding-left: 0px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .pb-32-adjust{
+        padding-bottom: 0px;
     }
 }
 .dot_orange{
@@ -328,10 +338,10 @@ a:hover, a:focus {
 .greyBox {
     display: inline-block;
     border-radius: 12px;
-    padding: 50px 40px;
+    padding: 120px 40px;
     /* max-height: 420px; */
     /* height: 420px; */
-    width: 38%;
+    width: 36%;
     /* width: 384px; */
     margin-right: 16px;
 }
@@ -385,10 +395,12 @@ a:hover, a:focus {
     height: 400px;
     /* min-height: 472px; */
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 768px) {
 
     .object-cover img {
-        height: 400px; 
+        height: 300px; /*400px */
+        padding: 16px;
+        border-radius: 28px;
     }
     .object-cover-collection img {
         height: 280px; 
@@ -489,7 +501,11 @@ a:hover, a:focus {
         margin: 8px auto;
     }
 }
-
+@media only screen and (max-width: 768px) {
+    .news_text_hero {
+        width: 93%;
+    }
+}
 
 .tips_box {
     position: relative;

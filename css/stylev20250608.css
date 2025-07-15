@@ -268,7 +268,7 @@ li.text-no-decoration{
     padding: 16px 0;
  }
 .sub-title {
-    color: #E1002A;
+    color: #E1002A !important;
     font-size: 22px;
     line-height: 40px;
     font-weight: 600;
@@ -320,7 +320,7 @@ li.text-no-decoration{
     /* background-color: #f4f4f4; */
     font-size: 32px; /*32px; */
     font-weight: 650;
-    line-height: 22px;
+    line-height: 40px;
 }
 .title_box_dh_title{
     font-size: 20px;
@@ -430,8 +430,10 @@ li.text-no-decoration{
 
     .only-pc-display{
         display: inline-block;
+        /* display: none; */
     }
     .only-m-display{
+        /* display: inline-block; */
         display: none;
     }
     .title_box_dh_title{
@@ -444,6 +446,14 @@ li.text-no-decoration{
         /* transform: translate(55%, 31%); */
         top: 0px;
         left: 5px;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .only-pc-display{
+        display: none;
+    }
+    .only-m-display{
+        display: inline-block;
     }
 }
 
